@@ -99,7 +99,7 @@ function analyze() {
     ANALYZE_ERROR.innerHTML = "Number of Errors: " + numOfErrors;
 }
 
-RECEIVED_TEXT.addEventListener("keypress", start, false);
+RECEIVED_TEXT.addEventListener("keydown", start, false);
 RECEIVED_TEXT.addEventListener("keyup", spellCheck, false);
 RESET.addEventListener("click", reset, false);
 ANALYZE.addEventListener("click", analyze, false);
