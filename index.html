@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" text="text/css">
+
+    <script src="js/script.js" defer></script>
+
+    <title>Typing Speed Check</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-first">
+            <div class="container">
+                <h1>Test Your Typing Speed</h1>
+            </div>
+        </div>
+        <div class="header-second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-sm-8 col-lg-6 offset-1 offset-sm-2 offset-lg-3">
+                        <p><strong>This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly. Good Luck!</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="text-area">
+        <div class=" container testing">
+            <div class="given">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="receive">
+                <textarea name="textarea" id="text-area" rows="6" placeholder="The clock starts when you start typing."></textarea>
+            </div>
+            <div class="meta">
+                <div class="timer"><strong>00:00:00</strong></div>
+                <button class="btn btn-primary reset">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="analyze">
+        <div class="container analyzing">
+            <div class="row">
+                <button class="btn btn-info analyzer">Analyze</button>
+            </div>
+            <div class="row">
+                <div id="result">
+                    <div id="speed"><p></p></div>
+                    <div id="errors"><p></p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
